@@ -44,14 +44,14 @@ dependencyResolutionManagement {
 **Kotlin DSL (build.gradle.kts):**
 ```kotlin
 dependencies {
-    implementation("com.github.Mohammed-baqer-null:CustomizableCardView:1.0.0")
+    implementation("com.github.Mohammed-baqer-null:CustomizableCardView:v1.0")
 }
 ```
 
 **Groovy (build.gradle):**
 ```groovy
 dependencies {
-    implementation 'com.github.Mohammed-baqer-null:CustomizableCardView:1.0.0'
+    implementation 'com.github.Mohammed-baqer-null:CustomizableCardView:v1.0'
 }
 ```
 
