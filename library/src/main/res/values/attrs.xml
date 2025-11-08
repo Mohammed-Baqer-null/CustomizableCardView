@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CustomizableCardView">
+    <attr
+      name="setCardIcon"
+      format="reference" />
+    <attr
+      name="setCardTitle"
+      format="string" />
+    <attr
+      name="setCardSummary"
+      format="string" />
+    <attr
+      name="setTitleFont"
+      format="string" />
+    <attr
+      name="setSummaryTextSize"
+      format="dimension" />
+    <attr
+      name="setTitleTextSize"
+      format="dimension" />
+    <attr
+      name="setSummaryFont"
+      format="string" />
+    <attr
+      name="setCardStroke"
+      format="dimension" />
+    <attr
+      name="setCardStrokeColor"
+      format="color|reference" />
+    <attr
+      name="isCheckableCard"
+      format="boolean" />
+    <attr
+      name="isClickableCard"
+      format="boolean" />
+    <attr
+      name="setCardBackgroundColor"
+      format="color" />
+    <attr
+      name="setCardElevation"
+      format="dimension" />
+    <attr
+      name="cardCheckedIcon"
+      format="reference" />
+    <attr
+      name="noIconBackground"
+      format="boolean" />
+    <attr
+      name="noIcon"
+      format="boolean" />
+    <attr name="cardCheckedIconGravity">
+      <enum
+        name="TOP_END"
+        value="0x00000001" />
+      <enum
+        name="TOP_START"
+        value="0x00000002" />
+      <enum
+        name="BOTTOM_END"
+        value="0x00000003" />
+      <enum
+        name="BOTTOM_START"
+        value="0x00000004" />
+      <enum
+        name="END_CENTER"
+        value="0x00000005" />
+    </attr>
+    <attr
+      name="setCardIconBackgroundDrawable"
+      format="reference" />
+    <attr
+      name="noTitle"
+      format="boolean" />
+    <attr
+      name="noSummary"
+      format="boolean" />
+    <attr
+      name="contentAlign"
+      format="enum">
+      <enum
+        name="left"
+        value="8388611" />
+      <enum
+        name="center"
+        value="1" />
+      <enum
+        name="right"
+        value="8388613" />
+    </attr>
+    <attr
+      name="cardCheckedIconMargin"
+      format="dimension" />
+    <attr
+      name="setCardIconWidth"
+      format="dimension" />
+    <attr
+      name="setCardIconHeight"
+      format="dimension" />
+
+    <attr
+      name="setCardIconBackgroundColor"
+      format="color" />
+    <attr
+      name="isCardRecommended"
+      format="boolean" />
+  </declare-styleable>
+
+</resources>
