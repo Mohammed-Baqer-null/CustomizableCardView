@@ -33,24 +33,17 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-
+    
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+    
     kotlin {
         compilerOptions {
             jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
-        }
-    }
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            groupId = "com.github.Mohammed-baqer-null"
-            artifactId = "CustomizableCardView"
-            version = "1.0.0"
-            
-            afterEvaluate {
-                from(components["release"])
-            }
         }
     }
 }
@@ -61,4 +54,18 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                
+                groupId = "com.github.Mohammed-baqer-null"
+                artifactId = "CustomizableCardView"
+                version = "1.0.0"
+            }
+        }
+    }
 }
